@@ -653,6 +653,23 @@ class NERDataset(JointERDataset):
 
 
 @register_dataset
+class HaremDataset(NERDataset):
+  name = 'harem'
+  natural_entity_types = {
+    'PESSOA': 'pessoa',
+    'ORGANIZACAO': 'organizacao',
+    'LOCAL': 'local',
+    'TEMPO': 'tempo',
+    'VALOR': 'valor',
+    'ABSTRACCAO': 'abstraccao',
+    'ACONTECIMENTO': 'acontecimento',
+    'COISA': 'coisa',
+    'OBRA': 'obra',
+    'OUTRO': 'outro'
+  }
+
+
+@register_dataset
 class CoNLL03Dataset(NERDataset):
   """
   CoNLL03 dataset (NER).
