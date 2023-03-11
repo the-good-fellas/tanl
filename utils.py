@@ -12,7 +12,7 @@ def get_episode_indices(episodes_string: str) -> List[int]:
   """
   episode_indices = []
 
-  if episodes_string is not None and episodes_string is not '':
+  if episodes_string is not None and episodes_string != '':
     ll = [int(item) for item in episodes_string.split('-')]
 
     if len(ll) == 1:

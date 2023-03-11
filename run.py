@@ -200,7 +200,8 @@ def main():
       model = T5ForConditionalGeneration.from_pretrained(
         model_args.model_name_or_path,
         config=config,
-        cache_dir=model_args.cache_dir
+        cache_dir=model_args.cache_dir,
+        from_flax=True
       )
 
     # fine-tune the model
