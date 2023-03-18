@@ -4,7 +4,7 @@ print('loading tokenizer')
 tokenizer = AutoTokenizer.from_pretrained('thegoodfellas/tgf-ptbr-flan-t5-base-2th', use_auth_token=True)
 
 print('loading model')
-model = T5ForConditionalGeneration.from_pretrained('experiments/harem-tgf-ptbr-flan-t5-base-2th-ep150-len256-b8-train/episode0')
+model = T5ForConditionalGeneration.from_pretrained('experiments/harem-tgf-ptbr-flan-t5-base-2th-ep100-len256-b8-train,test/episode0/')
 model.eval()
 
 device = 'cuda'
