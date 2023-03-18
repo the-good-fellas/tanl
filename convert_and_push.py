@@ -8,10 +8,10 @@ folder_path = 'experiments/harem-tgf-ptbr-flan-t5-base-22-1th-ep150-len256-b8-tr
 print('loading tokenizer')
 tokenizer = AutoTokenizer.from_pretrained('thegoodfellas/tgf-ptbr-flan-t5-base-22-1th', use_auth_token=True)
 
-print('loading model')
-model = T5ForConditionalGeneration.from_pretrained(folder_path, from_flax=True)
-
-model.save_pretrained(folder_path)
+# print('loading model')
+# model = T5ForConditionalGeneration.from_pretrained(folder_path)
+#
+# model.save_pretrained(folder_path)
 tokenizer.save_pretrained(folder_path)
 
 print('uploading...')
