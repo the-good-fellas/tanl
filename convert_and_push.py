@@ -6,7 +6,7 @@ api = HfApi()
 folder_path = 'experiments/harem-tgf-ptbr-flan-t5-base-22-1th-ep150-len256-b8-train/episode0'
 
 print('loading tokenizer')
-tokenizer = AutoTokenizer.from_pretrained('thegoodfellas/tgf-ptbr-flan-t5-base-22-1th', use_auth_token=True)
+tokenizer = AutoTokenizer.from_pretrained('thegoodfellas/tgf-ptbr-t5-base-mc4-sqrt', use_auth_token=True)
 
 # print('loading model')
 # model = T5ForConditionalGeneration.from_pretrained(folder_path)
